@@ -16,12 +16,12 @@ body {
     margin: 10px;
     padding: 0px;
     float: right;
-    font-family: "open sans", "sans serif";
+    font-family: Arial, sans-serif;
 }
 
 
 header a {
-    display: block;
+    display: #444;
     width: 40px;
     text-align: center;
     padding: 2px;
@@ -47,6 +47,10 @@ header a:hover, a:active {
 
 }
 
+/******************End of header***************/
+
+/*search engine*/
+
 .search {
     height: 300px;
     width: 300px;
@@ -70,30 +74,49 @@ header a:hover, a:active {
     height: 100%;
 }
 
+/*****************End of search engine*********************/
 
-footer div {
-    margin: 10px;
-    padding: 0px;
-    font-family: "open sans", "sans serif";
-    background-color: #F4F4F4;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 50px;
-    width: 100%;
+.footer-right {
+    list-style-type: none;
+    float: right;
 }
 
-.footer a {
-    display: block;
-    width: 40px;
+.footer-right li {
+    display: inline;
+    float: left;
+}
+
+.footer-left {
+    list-style-type: none;
+    float: left;
+}
+
+.footer-left li {
+    display: inline-block;
+}
+
+footer a {
+    display: inline-block;
+    width: 100%; 
     text-align: center;
     padding: 2px;
     text-decoration: none;
-    color: black;
-    vertical-align: bottom;
-
+    color: #444;
 }
 
-.footer a:hover, a:active {
+footer a:hover, a:active {
     text-decoration: underline;
+}
+
+footer {
+    background: #f2f2f2;
+    border-top: 1px solid #e4e4e4;
+    line-height: 40px;
+    min-width: 99%;
+    bottom: 0;
+    position: absolute;
+}
+
+footer ul {
+    padding: 0 0 0 20px;
 }
